@@ -174,6 +174,8 @@ class Snake {
     this.moveTime = this.scene.time.now + this.speed;
   }
 
+
+
   setBodyPartTexture(i, oldBodyDirection) {
     if (!oldBodyDirection.equals(this.directions[i - 1])) {
       let prevDirection = `${this.directions[i - 1].x},${this.directions[i - 1].y}`;
@@ -244,6 +246,8 @@ class Snake {
     this.gameStarted = true;
   }
 }
+
+
 
 class Food extends Phaser.GameObjects.Image {
   constructor(scene, x, y) {
